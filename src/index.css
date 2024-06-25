@@ -1,0 +1,36 @@
+* {
+  background-color: #070707;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.container {
+  min-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar{
+  padding: 0 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_list ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li{
+  text-decoration: none;
+  list-style-type: none;
+  
+}
