@@ -19,52 +19,48 @@ const About = () => {
                             </div>
                         </div>
                         <div className='about_matrix_list'>
-                            <span className="about_matrix_list-value">~$300 billion</span>
+                            <span className="about_matrix_list-value">1%</span>
                             <div className="about_matrix_list-type">
-                                cumulative trading<br></br>
-                                volume to date
+                                of the global crypto spot <br></br> trading volume
                             </div>
                         </div>
                         <div className='about_matrix_list'>
-                            <span className="about_matrix_list-value">~$300 billion</span>
+                            <span className="about_matrix_list-value">~59</span>
                             <div className="about_matrix_list-type">
-                                cumulative trading<br></br>
-                                volume to date
+                                Gravity Teammates<br></br>
+                                (& growing)
                             </div>
                         </div>
                         <div className='about_matrix_list'>
-                            <span className="about_matrix_list-value">~$300 billion</span>
+                            <span className="about_matrix_list-value">~30+</span>
                             <div className="about_matrix_list-type">
-                                cumulative trading<br></br>
-                                volume to date
+                                leading global and local<br></br>
+                                crypto exchanges
                             </div>
                         </div>
                         <div className='about_matrix_list'>
-                            <span className="about_matrix_list-value">~$300 billion</span>
+                            <span className="about_matrix_list-value">2017</span>
                             <div className="about_matrix_list-type">
-                                cumulative trading<br></br>
-                                volume to date
+                                start, crypto-natives
                             </div>
                         </div>
                         <div className='about_matrix_list'>
-                            <span className="about_matrix_list-value">~$300 billion</span>
+                            <span className="about_matrix_list-value">1,400+</span>
                             <div className="about_matrix_list-type">
-                                cumulative trading<br></br>
-                                volume to date
+                                crypto-asset pairs
+
                             </div>
                         </div>
                         <div className='about_matrix_list'>
-                            <span className="about_matrix_list-value">~$300 billion</span>
+                            <span className="about_matrix_list-value">24/7</span>
                             <div className="about_matrix_list-type">
-                                cumulative trading<br></br>
-                                volume to date
+                                liquidity
                             </div>
                         </div>
                         <div className='about_matrix_list'>
-                            <span className="about_matrix_list-value">~$300 billion</span>
+                            <span className="about_matrix_list-value">~$300 mil</span>
                             <div className="about_matrix_list-type">
-                                cumulative trading<br></br>
-                                volume to date
+                                trades done to date
                             </div>
                         </div>
                     </div>

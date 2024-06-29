@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="57px" viewBox="0 0 57 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/arrow-in-circle/hover</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#665DCD" offset="0%"></stop>
+            <stop stop-color="#5FA4E6" offset="44.7624153%"></stop>
+            <stop stop-color="#D2AB67" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Blog---Single-post" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gravity-Team---Single-Blog-Post" transform="translate(-716.000000, -5270.000000)" fill="url(#linearGradient-1)">
+            <g id="featured-posts" transform="translate(172.000000, 5160.000000)">
+                <g id="arrows" transform="translate(454.500000, 109.500000)">
+                    <g id="Combined-Shape" transform="translate(89.500000, 0.500000)">
+                        <path d="M28.5,0 C44.2401154,0 57,12.7598846 57,28.5 C57,44.2401154 44.2401154,57 28.5,57 C12.7598846,57 0,44.2401154 0,28.5 C0,12.7598846 12.7598846,0 28.5,0 Z M29.4924701,20.2591567 C29.1193452,20.5903665 29.109966,21.2379787 29.4549723,21.5987796 L35.6201153,28.052733 L19.9600043,28.052733 C19.4293619,28.052733 19,28.4764581 19,29.0001023 C19,29.5237465 19.4293763,29.9474716 19.9600043,29.9474716 L35.6201153,29.9474716 L29.4549723,36.401425 C29.1099708,36.7622401 29.1343453,37.3932307 29.4924701,37.7410526 C29.8712206,38.1074193 30.4974986,38.0759619 30.8499642,37.7040484 L38.5299988,29.6514092 C38.7549998,29.433069 38.7962512,29.2221325 38.8,29.0000928 C38.8,28.7817763 38.6649994,28.4894371 38.5299988,28.3488001 L30.8499642,20.296161 C30.4918394,19.9297943 29.9106,19.8872385 29.4924701,20.2591567 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
