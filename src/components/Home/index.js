@@ -4,6 +4,7 @@ import About from '../../pages/about'
 import Sponsers from '../../pages/sponsers'
 import '../../index.css'
 import Testimonial from '../../pages/testimonial'
+import Join from '../../pages/join'
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <About />
       <Sponsers />
       <Testimonial />
+      <Join />
     </>
   )
 }
