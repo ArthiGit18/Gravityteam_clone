@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Footer = () => {
+    
     return (
         <div className='section_wrapper'>
             <div className='footer_wrapper'>
