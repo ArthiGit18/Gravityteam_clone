@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import TransitionOnVisible from '../hooks/TransitionOnVisible'; // Adjust the path as per your file structure
 
 const About = () => {
-    return (
-        <div className='section_wrapper'>
+  return (
+    <div className='section_wrapper'>
+      <TransitionOnVisible className='about'>
             <section className='about'>
                 <h2 className='about_header'>About Gravity Team</h2>
                 <div className='about_desc'>
@@ -66,6 +68,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
+            </TransitionOnVisible>
         </div>
     )
 }

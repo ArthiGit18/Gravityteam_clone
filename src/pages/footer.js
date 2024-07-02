@@ -1,10 +1,11 @@
 import React from 'react'
+import TransitionOnVisible from '../hooks/TransitionOnVisible'
 
 const Footer = () => {
     
     return (
         <div className='section_wrapper'>
-            <div className='footer_wrapper'>
+            <TransitionOnVisible className='footer_wrapper'>
                 <div className='footer_content'>
                     <div className='footer_content_abt'>
                         <h3>GRAVITY TEAM</h3>
@@ -21,7 +22,7 @@ const Footer = () => {
                     <p>Terms of Use & Privacy Policy</p>
                     <p>©2024 Gravity Team. All Rights Reserved</p>
                 </div>
-            </div>
+            </TransitionOnVisible>
 
         </div>
     )

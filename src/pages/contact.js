@@ -1,9 +1,10 @@
 import React from 'react'
+import TransitionOnVisible from '../hooks/TransitionOnVisible'
 
 const Contact = () => {
   return (
     <div  className='section_wrapper'>
-        <div className='contact_wrapper'>
+        <TransitionOnVisible className='contact_wrapper'>
             <h2 className='' style={{textAlign: "center"}}>
             Contact Us
             </h2>
@@ -21,7 +22,7 @@ const Contact = () => {
                 <img src="/assets/contact/gold-blob.png" alt="1" className='gold2' />
                 <img src="/assets/contact/purple-blob.png" alt="1" className='purple' />
             </div>
-        </div>
+        </TransitionOnVisible>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import TransitionOnVisible from '../hooks/TransitionOnVisible'; // Adjust the path as per your file structure
 
 const testimonials = [
     {
@@ -49,50 +50,54 @@ const Testimonial = () => {
 
     return (
         <div className='section_wrapper'>
-            <section className='about'>
-                <h2 className='about_header'>We are in a good company</h2>
-                <div className='about_desc'>
-                    <p>Our partnerships have delivered great value to our projects and we’re happy to share some of their feedback below</p>
-                </div>
-
-                <div className='testimonial'>
-                    <div className='arrow_test'>
-                        <button className='arrow_left' onClick={prevSlide}>
-                            <img src="/assets/testimonial/right1.svg" alt="arrow" />
-                        </button>
-                        <button className='arrow_right' onClick={nextSlide}>
-                            <img src="/assets/testimonial/right1.svg" alt="arrow" />
-                        </button>
+            <TransitionOnVisible className='testimonial_wrapper'>
+                <section className='about'>
+                    <h2 className='testimonial_header'>
+                        We are in a good company
+                    </h2>
+                    <div className='testimonial_desc'>
+                        <p>Our partnerships have delivered great value to our projects and we’re happy to share some of their feedback below</p>
                     </div>
 
-                    <div className='testimonial_container'>
-                        {testimonials.map((testimonial, index) => (
-                            <div key={index} className={`testimonial_content1 ${index === currentSlide ? 'active' : ''}`}>
-                                <div className='testimonial_content-p'>
-                                    <p>{testimonial.content}</p>
-                                </div>
-                                <div className='testimonial_content-name'>
-                                    <h6>{testimonial.name}</h6>
-                                </div>
-                                <div className='testimonial_content-by'>
-                                    <p className=''>{testimonial.position}</p>
-                                    <img src={testimonial.imgSrc} alt={testimonial.altText} />
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                    <div className='testimonial'>
+                        <div className='arrow_test'>
+                            <button className='arrow_left' onClick={prevSlide}>
+                                <img src="/assets/testimonial/right1.svg" alt="arrow" />
+                            </button>
+                            <button className='arrow_right' onClick={nextSlide}>
+                                <img src="/assets/testimonial/right1.svg" alt="arrow" />
+                            </button>
+                        </div>
 
-                    <div className='dots'>
-                        {testimonials.map((_, index) => (
-                            <div
-                                key={index}
-                                className={`dot ${index === currentSlide ? 'active' : ''}`}
-                                onClick={() => goToSlide(index)}
-                            ></div>
-                        ))}
+                        <div className='testimonial_container'>
+                            {testimonials.map((testimonial, index) => (
+                                <div key={index} className={`testimonial_content1 ${index === currentSlide ? 'active' : ''}`}>
+                                    <div className='testimonial_content-p'>
+                                        <p>{testimonial.content}</p>
+                                    </div>
+                                    <div className='testimonial_content-name'>
+                                        <h6>{testimonial.name}</h6>
+                                    </div>
+                                    <div className='testimonial_content-by'>
+                                        <p className=''>{testimonial.position}</p>
+                                        <img src={testimonial.imgSrc} alt={testimonial.altText} />
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div className='dots'>
+                            {testimonials.map((_, index) => (
+                                <div
+                                    key={index}
+                                    className={`dot ${index === currentSlide ? 'active' : ''}`}
+                                    onClick={() => goToSlide(index)}
+                                ></div>
+                            ))}
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </TransitionOnVisible>
         </div>
     );
 }

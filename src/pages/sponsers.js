@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import TransitionOnVisible from '../hooks/TransitionOnVisible'; // Adjust the path as per your file structure
 
 const sponsors = [
   { src: "/assets/1.png", name: "KRAKEN" },
@@ -27,8 +28,8 @@ const Sponsers = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       document.getElementById('solana').style.transform = `translateY(${scrollPosition * 0.1}px)`;
-      document.getElementById('near').style.transform = `translateX(${scrollPosition * 0.1}px)`;   
-      document.getElementById('mena').style.transform = `translatey(${scrollPosition * -0.1}px)`;
+      document.getElementById('near').style.transform = `translateX(${scrollPosition * 0.1}px)`;
+      document.getElementById('mena').style.transform = `translateY(${scrollPosition * -0.1}px)`;
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -38,7 +39,7 @@ const Sponsers = () => {
   }, []);
 
   return (
-    <div className='sponser_container'>
+    <TransitionOnVisible className='sponser_container'>
       <div className='section_wrapper'>
         <div className='sponsers'>
           <div className='sponsers_content'>
@@ -69,7 +70,7 @@ const Sponsers = () => {
           <img id="mena" src="/assets/sponsers/mena.png.png" alt="Image" className='mena' />
         </div>
       </div>
-    </div>
+    </TransitionOnVisible>
   );
 }
 

@@ -1,9 +1,10 @@
 import React from 'react'
+import TransitionOnVisible from '../hooks/TransitionOnVisible'; // Adjust the path as per your file structure
 
 const Join = () => {
     return (
         <div className='section_wrapper'>
-            <section className='join'>
+            <TransitionOnVisible className='join'>
                 <div className='join_wrapper'>
                     <div className='join_header'>
                         <h2>Join Gravity Team</h2>
@@ -21,7 +22,7 @@ const Join = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </TransitionOnVisible>
         </div>
     )
 }
