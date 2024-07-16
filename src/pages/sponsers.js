@@ -62,12 +62,12 @@ const Sponsers = () => {
 
       <div className='vertor_sponsers_images'>
         <div className='vertor_sponsers'>
-          <img src="/assets/sponsers/vector-bg.png" alt="vector" className='vector_sponser_img' />
+          <img src="/assets/sponsers/vector-bg.png" alt="Vector background" className='vector_sponser_img' />
         </div>
         <div className='vector_icon_moving'>
-          <img id="solana" src="/assets/sponsers/solana.png" alt="Image" className='solana' />
-          <img id="near" src="/assets/sponsers/near.png" alt="Image" className='near' />
-          <img id="mena" src="/assets/sponsers/mena.png.png" alt="Image" className='mena' />
+          <img id="solana" src="/assets/sponsers/solana.png" alt={sponsors[0].name} className='solana' />
+          <img id="near" src="/assets/sponsers/near.png" alt={sponsors[1].name} className='near' />
+          <img id="mena" src="/assets/sponsers/mena.png" alt={sponsors[2].name} className='mena' />
         </div>
       </div>
     </TransitionOnVisible>

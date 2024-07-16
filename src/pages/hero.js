@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import '../index.css';
 import Navbar from './navbar';
 import Tradebar from './tradebar';
@@ -32,18 +32,18 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleKeyPress = (event) => {
+  const handleKeyPress = useCallback((event) => {
     if (event.ctrlKey && event.key === 'c') {
       setIsScrolled(!isScrolled); // Toggle visibility based on current state
     }
-  };
+  }, [isScrolled]);
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyPress);
 
     // Cleanup function to remove keydown listener on component unmount
     return () => document.removeEventListener('keydown', handleKeyPress);
-  }, []);
+  }, [handleKeyPress]); // Include handleKeyPress in dependencies
 
   return (
     <div className='container'>
@@ -62,7 +62,7 @@ const Hero = () => {
             get in touch
           </button>
         </div>
-        <video className='hero_video' autoplay loop muted playsInline>
+        <video className='hero_video' autoPlay loop muted playsInline>
           <source src="/assets/hero-animation.mp4" type="video/mp4" />
         </video>
         <div className='tradeBar'>

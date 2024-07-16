@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import TransitionOnVisible from '../hooks/TransitionOnVisible'; // Adjust the path as per your file structure
 
 const Join = () => {
@@ -15,16 +15,18 @@ const Join = () => {
                     </div>
 
                     <div className='join_content'>
-                        <p className=''>Join our community of innovators, problem solvers and owners who apply scientific discovery techniques to make crypto markets a better place for everyone.</p><br></br>
-                        <p className=''>As we emphasize it in our name – Gravity Team, we are a team. A team of bright, talented people, each masters of their specialty, curious about the world and eager to solve the new exciting cryptocurrency market problems, build cool stuff and have fun whilst doing so!</p><br></br>
+                        <p>Join our community of innovators, problem solvers, and owners who apply scientific discovery techniques to make crypto markets a better place for everyone.</p><br />
+                        <p>As we emphasize it in our name – Gravity Team, we are a team. A team of bright, talented people, each masters of their specialty, curious about the world and eager to solve the new exciting cryptocurrency market problems, build cool stuff, and have fun whilst doing so!</p><br />
                         <div className='join_content_actions'>
-                            <a href="#">Learn more about working with us </a>
+                            <button className='join_button' onClick={() => alert("Learn more about working with us!")}>
+                                Learn more about working with us
+                            </button>
                         </div>
                     </div>
                 </div>
             </TransitionOnVisible>
         </div>
-    )
+    );
 }
 
-export default Join
+export default Join;

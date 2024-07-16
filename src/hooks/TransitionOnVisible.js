@@ -9,19 +9,21 @@ const TransitionOnVisible = ({ children, className }) => {
       (entries) => {
         if (entries[0].isIntersecting) {
           setIsVisible(true);
-          observer.disconnect();
+          observer.disconnect(); // Stop observing once visible
         }
       },
       { threshold: 0.1 } // Trigger when 10% of the component is visible
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const currentRef = ref.current; // Store the current ref value
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef); // Use the stored ref in cleanup
       }
     };
   }, []);

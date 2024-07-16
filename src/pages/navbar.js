@@ -8,10 +8,10 @@ const Navbar = ({ isScrolled }) => {
       </div>
       <div className='nav_list'>
         <ul>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">OUR SERVICES</a></li>
-          <li><a href="#">CAREERS</a></li>
-          <li><a href="#">BLOG</a></li>
+          <li><a href="/about">ABOUT US</a></li>
+          <li><a href="/services">OUR SERVICES</a></li>
+          <li><a href="/careers">CAREERS</a></li>
+          <li><a href="/blog">BLOG</a></li>
         </ul>
       </div>
       <div className='nav_action'>
